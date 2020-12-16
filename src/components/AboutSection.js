@@ -55,4 +55,5 @@ const Image = styled.div`
     object-fit: cover;
   }
 `;
+
 export default AboutSection;
