@@ -47,4 +47,5 @@ const GlobalStyle = createGlobalStyle`
         line-height: 150%;
     } 
 `;
+
 export default GlobalStyle;
