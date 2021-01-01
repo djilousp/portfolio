@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
     }
     body{
         background-color: #1b1b1b;
+        font-family: "Poppins", sans-serif ;
     }
     button{
         font-weight: bold;
@@ -17,6 +18,7 @@ const GlobalStyle = createGlobalStyle`
         border: 3px solid #23d997;
         background: transparent;
         color: white;
+        font-family: "Roboto Slab", sans-serif ;
         transition: all 0.5s ease-out;
         &:hover{
             background-color: #23d997;
@@ -25,6 +27,7 @@ const GlobalStyle = createGlobalStyle`
     h2{
         font-weight: lighter;
         font-size: 3rem;
+        font-family:  "Montserrat", sans-serif;
     }
     h3{
         color:white;
