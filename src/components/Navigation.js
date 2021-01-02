@@ -24,7 +24,7 @@ const Navigation = () => {
     </Nav>
   );
 };
-const Nav = styled.div`
+const Nav = styled.nav`
   min-height: 10vh;
   display: flex;
   margin: auto;
