@@ -5,24 +5,29 @@ import Navigation from "./components/Navigation";
 import ContactMe from "./pages/ContactMe";
 import MyWork from "./pages/MyWork";
 // Router
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, useLocation } from "react-router-dom";
+//Animation
+import { AnimatePresence } from "framer-motion";
 
 function App() {
+  const location = useLocation();
   return (
     <div className="App">
       <GlobalStyle />
       <Navigation />
-      <Switch>
-        <Route path="/" exact>
-          <AboutUs />
-        </Route>
-        <Route path="/work">
-          <MyWork />
-        </Route>
-        <Route path="/contact">
-          <ContactMe />
-        </Route>
-      </Switch>
+      <AnimatePresence exitBeforeEnter>
+        <Switch location={location} key={location.pathname}>
+          <Route path="/" exact>
+            <AboutUs />
+          </Route>
+          <Route path="/work">
+            <MyWork />
+          </Route>
+          <Route path="/contact">
+            <ContactMe />
+          </Route>
+        </Switch>
+      </AnimatePresence>
     </div>
   );
 }
