@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { BaseLayout } from "../styles";
-
+import { motion } from "framer-motion";
 const FaqSection = () => {
   return (
     <Faq>
